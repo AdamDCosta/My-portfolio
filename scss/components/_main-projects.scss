@@ -1,0 +1,29 @@
+@use "../base/abstracts" as *;
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  height: 80vh;
+  width: 90%;
+
+  &__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 5 ;
+  }
+
+  // &__cell--title {
+  //   grid-column: 1 / 4 ;
+  // }
+
+  &__cell--image {
+    width: 100% ;
+  }
+
+  &__cell--desc {
+    text-align: center;
+  }
+
+}
