@@ -1,0 +1,75 @@
+@use "../base/abstracts" as *;
+@use "../layout/header" as *;
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  height: 70vh;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+
+  &__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__cell--name {
+    font-size: 2rem;
+    // text-align: center;
+  }
+
+  &__cell--title {
+    font-size: 2rem;
+
+  }
+
+  &__cell--profile {
+    line-height: 1.5;
+    // text-align: center;
+  }
+
+  &__cell--button {
+    font-size: 2rem;
+
+    a {
+      background-color: $color-action;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+
+  .intro {
+    &__cell--name {
+      font-size: 3rem;
+      // text-align: center;
+    }
+
+    &__cell--title {
+      font-size: 3rem;
+  
+    }
+
+    &__cell--button {
+      font-size: 3rem;
+  
+      a {
+        background-color: $color-action;
+        padding: 20px 60px;
+        border-radius: 50px;
+      }
+    }
+  }
+
+
+
+
+}
