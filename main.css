@@ -70,3 +70,13 @@ header {
     border-radius: 50px;
   }
 }
+.nav {
+  background: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.nav__icons a:nth-child(2) {
+  margin-left: 10px;
+}
