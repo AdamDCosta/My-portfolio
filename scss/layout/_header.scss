@@ -7,14 +7,24 @@ header {
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  
 }
 
+header::before {
+  content: "";
+  display: block;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0,18,25,1) 0%, rgba(0,95,115,0.24096385542168675) 100%);
+  z-index: -1;
+}
 
 $breakpoint-tablet: 768px;
 
 @media screen and (min-width: $breakpoint-tablet) {
 
-
-
-
 }
+

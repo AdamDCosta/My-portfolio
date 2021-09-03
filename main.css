@@ -18,6 +18,18 @@ header {
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  display: block;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(0deg, #001219 0%, rgba(0, 95, 115, 0.2409638554) 100%);
+  z-index: -1;
 }
 
 .intro {
@@ -61,6 +73,9 @@ header {
   .intro__cell--title {
     font-size: 3rem;
   }
+  .intro__cell--profile {
+    font-size: 2rem;
+  }
   .intro__cell--button {
     font-size: 3rem;
   }
@@ -79,4 +94,72 @@ header {
 }
 .nav__icons a:nth-child(2) {
   margin-left: 10px;
+}
+
+section {
+  background: linear-gradient(135deg, #001219 0%, #005f73 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .section-header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  height: 80vh;
+  width: 100%;
+  border-radius: 50px;
+}
+.project__cell {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-column: 2/5;
+}
+.project__cell--image img {
+  width: 100%;
+}
+.project__cell--desc {
+  text-align: center;
+}
+.project__cell--code, .project__cell--buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-section-2 {
+  background: #001219;
+  background: linear-gradient(45deg, #001219 0%, #005f73 100%);
+}
+
+.project-1 {
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #fe8163 100%);
+}
+
+.project-2 {
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #94d2bd 100%);
+}
+
+.project-3 {
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #0a9369 100%);
+}
+
+.project__cell--buttons a {
+  background-color: #FE8163;
+  padding: 10px 0;
+  width: 40%;
+  border-radius: 50px;
+  text-align: center;
 }
