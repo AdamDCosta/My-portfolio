@@ -1,0 +1,9 @@
+@use "../base/abstracts" as *;
+
+.project__cell--buttons a {
+  background-color: $color-action;
+  padding: 10px 0;
+  width: 40%;
+  border-radius: 50px;
+  text-align: center;
+}

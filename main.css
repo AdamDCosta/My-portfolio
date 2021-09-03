@@ -121,15 +121,19 @@ section .section-header {
 }
 .project__cell {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   grid-column: 2/5;
 }
-.project__cell--image {
+.project__cell--image img {
   width: 100%;
 }
 .project__cell--desc {
   text-align: center;
+}
+.project__cell--code, .project__cell--buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-section-2 {
@@ -150,4 +154,12 @@ section .section-header {
 .project-3 {
   background: black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #0a9369 100%);
+}
+
+.project__cell--buttons a {
+  background-color: #FE8163;
+  padding: 10px 0;
+  width: 40%;
+  border-radius: 50px;
+  text-align: center;
 }

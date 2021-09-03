@@ -10,7 +10,7 @@
 
   &__cell {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     grid-column: 2 / 5 ;
   }
@@ -19,13 +19,20 @@
   //   grid-column: 1 / 4 ;
   // }
 
-  &__cell--image {
+  &__cell--image img {
     width: 100% ;
   }
 
   &__cell--desc {
     text-align: center;
   }
+
+  &__cell--code, &__cell--buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
 
 }
 
