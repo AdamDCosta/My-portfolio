@@ -116,7 +116,8 @@ section .section-header {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
   height: 80vh;
-  width: 90%;
+  width: 100%;
+  border-radius: 50px;
 }
 .project__cell {
   display: flex;
@@ -129,4 +130,24 @@ section .section-header {
 }
 .project__cell--desc {
   text-align: center;
+}
+
+.project-section-2 {
+  background: #001219;
+  background: linear-gradient(45deg, #001219 0%, #005f73 100%);
+}
+
+.project-1 {
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #fe8163 100%);
+}
+
+.project-2 {
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #94d2bd 100%);
+}
+
+.project-3 {
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #0a9369 100%);
 }

@@ -5,7 +5,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
   height: 80vh;
-  width: 90%;
+  width: 100%;
+  border-radius: 50px;
 
   &__cell {
     display: flex;
@@ -26,4 +27,24 @@
     text-align: center;
   }
 
+}
+
+.project-section-2 {
+  background: rgb(0,18,25);
+  background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+}
+
+.project-1 {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 51%, rgba(254,129,99,1) 100%);
+}
+
+.project-2{
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 51%, rgba(148,210,189,1) 100%);
+}
+
+.project-3{
+  background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0) 51%, rgba(10,147,105,1) 100%);
 }
