@@ -1,0 +1,29 @@
+@use "../base/abstracts" as *;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  height: 80vh;
+  width: 100%;
+  border-radius: 50px;
+
+  &__cell {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 2 / 5 ;
+  }
+
+  &__cell--image  img {
+   width: 100%;
+   border-radius: 50px;
+  }
+
+  &__cell--link a {
+    background-color: $color-action;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+
+}
