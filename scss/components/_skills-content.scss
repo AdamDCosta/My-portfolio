@@ -1,0 +1,21 @@
+@use "../base/abstracts" as *;
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  height: 80vh;
+  width: 90%;
+  border-radius: 50px;
+
+  &__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__cell--html {
+    grid-column: 2 / 3;
+  }
+
+}
