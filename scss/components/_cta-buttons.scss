@@ -1,0 +1,8 @@
+@use "../base/abstracts" as *;
+
+
+.cta-button {
+  background-color: $color-action;
+  padding: 10px 20px;
+  border-radius: 50px;
+}

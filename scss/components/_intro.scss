@@ -35,12 +35,6 @@
 
   &__cell--button {
     font-size: 2rem;
-
-    a {
-      background-color: $color-action;
-      padding: 10px 20px;
-      border-radius: 50px;
-    }
   }
 
 }
@@ -66,7 +60,7 @@
     &__cell--button {
       font-size: 3rem;
   
-      a {
+      .cta-button {
         background-color: $color-action;
         padding: 20px 60px;
         border-radius: 50px;
