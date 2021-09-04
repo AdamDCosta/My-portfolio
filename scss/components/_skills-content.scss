@@ -3,7 +3,7 @@
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  // gap: 10px;
   height: 80vh;
   width: 90%;
   border-radius: 50px;
@@ -14,8 +14,16 @@
     align-items: center;
   }
 
-  &__cell--html {
+  &__cell--html, &__cell--figma, &__cell--scss, &__cell--java {
     grid-column: 2 / 3;
+  }
+
+  &__cell--css, &__cell--react, &__cell--git {
+    grid-column: 1 / 2;
+  }
+
+  &__cell--js, &__cell--node, &__cell--github {
+    grid-column: 3 / 4;
   }
 
 }
