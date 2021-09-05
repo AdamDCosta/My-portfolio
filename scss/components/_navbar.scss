@@ -21,7 +21,8 @@
   }
 
   &__icons {
-    margin: auto 15px;
+    margin: 2vh 0 2vh 20px;
+    padding-right: 20px;
   }
 
   &__menu {
@@ -30,20 +31,39 @@
     top: 2vh;
   }
 
+  &__links {
+    display: flex;
+    width: 100%;
+    z-index: 10;
+  }
+
+
+
   &__links ul {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 90vh;
   }
 
   &__links li {
     list-style: none;
+    text-align: center;
+    padding: 80px;
+
   }
 
   &__links li a {
     display: none;
     text-decoration: none;
+    font-size: 2rem;
+    z-index: 10;
   }
 
+}
+
+.nav__links li a.active {
+  display: block;
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
@@ -68,19 +88,31 @@
       align-items: center;
       justify-content: space-evenly;
       text-align: center;
+      padding: none;
       padding-right: 20px;
-      border: none
+      border: none;
+      height: 10vh;
+    }
+
+    &__links li {
+      padding: 15px;
     }
 
     &__links li a {
       display: block;
-      margin: auto 20px;
-      font-size: 2rem;
+      margin: auto;
+      font-size: 1.5rem;
       color: $color-blue-light;
     }
 
     &__links li a:hover {
       color: $color-action;
+    }
+
+    &__icons {
+      margin: 2vh 0 2vh 20px;
+      padding-right: 20px;
+      width: 25%;
     }
 
     
