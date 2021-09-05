@@ -1,3 +1,5 @@
+@use "../base/abstracts" as *;
+
 header {
   background-image: url(../../assets/Forest-background-cropped.jpg);
   background-size: cover;
@@ -22,7 +24,7 @@ header::before {
   z-index: -1;
 }
 
-$breakpoint-tablet: 768px;
+
 
 @media screen and (min-width: $breakpoint-tablet) {
 

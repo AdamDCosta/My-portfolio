@@ -2,9 +2,11 @@
 
 .nav {
   background: transparent;
-  background-color: $color-black;
+  // background-color: transparent;
+  background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 10vh;
   // padding: 10px;
   // position: sticky;
@@ -14,9 +16,79 @@
     margin-left: 10px;
   }
 
-  &__icons, &__menu {
+  &__icons img:hover {
+    color: $color-blue-light;
+  }
+
+  &__icons {
     margin: auto 15px;
   }
 
+  &__menu {
+    position: absolute;
+    right: 20px;
+    top: 2vh;
+  }
+
+  &__links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__links li {
+    list-style: none;
+  }
+
+  &__links li a {
+    display: none;
+    text-decoration: none;
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+
+  .nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__links ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      padding-right: 20px;
+      border: none
+    }
+
+    &__links li a {
+      display: block;
+      margin: auto 20px;
+      font-size: 2rem;
+      color: $color-blue-light;
+    }
+
+    &__links li a:hover {
+      color: $color-action;
+    }
+
+    
+
+    &__menu {
+      display: none;
+    }
+
+  }
 
 }
