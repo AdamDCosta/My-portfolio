@@ -9,6 +9,9 @@ $color-blue-light: #94D2BD;
 $color-green: #0A9369;
 $color-action: #FE8163;
 
+$h2-devices: 2rem;
+$h2-desktop: 3rem;
+
 * {
   margin: 0;
   padding: 0;
@@ -20,3 +23,22 @@ $color-action: #FE8163;
 a {
   text-decoration: none;
 }
+
+.section-header {
+  font-size: $h2-devices;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
+
+// @mixin h3-style ($h3-style: devices) {
+//   font-size: 2rem;
+// }
+
+// @mixin h3-style ($h3-styles: desktop) {
+//   font-size: 3rem;
+// }
+  

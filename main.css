@@ -11,11 +11,19 @@ a {
   text-decoration: none;
 }
 
+.section-header {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
 header {
   background-image: url(../../assets/Forest-background-cropped.jpg);
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -25,7 +33,7 @@ header {
 header::before {
   content: "";
   display: block;
-  height: 100vh;
+  height: 90vh;
   position: absolute;
   width: 100%;
   background: linear-gradient(0deg, #001219 0%, rgba(0, 95, 115, 0.2409638554) 100%);
@@ -49,7 +57,7 @@ header::before {
   text-align: center;
 }
 .intro__cell--name {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .intro__cell--title {
   font-size: 2rem;
@@ -82,14 +90,17 @@ header::before {
 }
 .nav {
   background: transparent;
-  background-color: transparent;
+  background-color: #001219;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  height: 10vh;
   width: 100%;
 }
 .nav__icons a:nth-child(2) {
   margin-left: 10px;
+}
+.nav__icons, .nav__menu {
+  margin: auto 15px;
 }
 
 section {
@@ -223,6 +234,9 @@ section .section-header {
   justify-content: center;
   align-items: center;
   grid-column: 2/5;
+}
+.contact__cell--email-address {
+  font-size: 2rem;
 }
 
 .skills-section {

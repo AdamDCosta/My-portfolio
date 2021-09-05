@@ -19,12 +19,12 @@
   }
 
   &__cell--name {
-    font-size: 2rem;
+    font-size: 3rem;
     // text-align: center;
   }
 
   &__cell--title {
-    font-size: 2rem;
+    font-size: $h2-devices;
 
   }
 
@@ -48,7 +48,7 @@
     }
 
     &__cell--title {
-      font-size: 3rem;
+      font-size: $h2-desktop;
   
     }
 
