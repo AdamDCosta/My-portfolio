@@ -15,7 +15,13 @@
     grid-column: 2 / 5;
   }
 
+  
+
   &__cell--email-address {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
     font-size: 2rem;
   }
 
@@ -25,4 +31,9 @@
   //   align-items: center;
   //   grid-column: 2 / 5;
   }
+
+.cta-button {
+
+
+}
 

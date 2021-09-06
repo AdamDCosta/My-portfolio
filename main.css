@@ -57,7 +57,7 @@ header::before {
   text-align: center;
 }
 .intro__cell--name {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .intro__cell--title {
   font-size: 2rem;
@@ -126,7 +126,6 @@ header::before {
 .nav__links li {
   list-style: none;
   text-align: center;
-  padding: 80px;
 }
 .nav__links li a {
   display: none;
@@ -224,6 +223,10 @@ section .section-header {
   display: flex;
   justify-content: space-between;
 }
+.project__cell--code img {
+  height: 100%;
+  max-width: 40px;
+}
 
 .project-section-2 {
   background: #001219;
@@ -281,11 +284,16 @@ section .section-header {
 .about__cell--image img {
   width: 100%;
   border-radius: 50px;
+  max-height: 400px;
+  max-width: 320px;
 }
 .about__cell--link a {
   background-color: #FE8163;
   padding: 10px 20px;
   border-radius: 50px;
+}
+.about .cta-button {
+  font-size: 2rem;
 }
 
 .cta-button {
@@ -317,6 +325,9 @@ section .section-header {
   grid-column: 2/5;
 }
 .contact__cell--email-address {
+  font-size: 1.4rem;
+}
+.contact .cta-button {
   font-size: 2rem;
 }
 

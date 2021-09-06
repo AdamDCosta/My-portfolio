@@ -32,9 +32,12 @@
     display: flex;
     justify-content: space-between;
   }
-
   
-
+  &__cell--code img {
+    height: 100%;
+    max-width: 40px;
+  }
+       
 }
 
 .project-section-2 {
@@ -56,3 +59,4 @@
   background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,0) 51%, rgba(10,147,105,1) 100%);
 }
+
