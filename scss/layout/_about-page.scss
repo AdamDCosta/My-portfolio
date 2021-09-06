@@ -1,4 +1,4 @@
-
+@use "../base/abstracts" as *;
 
 .about-section {
   display: flex;
@@ -8,4 +8,33 @@
   height: 100vh;
   background: rgb(0,18,25);
   background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+}
+
+@media screen and (min-width: $breakpoint-tablet){
+  
+  
+  .about-section {
+    background-image: url(../../assets/Forest-background-cropped.jpg);
+    background-size: cover;
+    width: 100%;
+    // background: none;
+    // background: rgb(0,18,25);
+    // background: linear-gradient(135deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+  }
+
+  .about-section::before {
+    content: "";
+    display: block;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,18,25,1) 0%, rgba(0,95,115,0.24096385542168675) 100%);
+    z-index: -1;
+  }
 }
