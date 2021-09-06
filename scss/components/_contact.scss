@@ -1,5 +1,9 @@
 @use "../base/abstracts";
 
+.contact-section .section-header {
+  margin-top: 20px;
+}
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

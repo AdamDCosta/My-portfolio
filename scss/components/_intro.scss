@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
   height: 70vh;
   width: 80%;
   padding: 10px;
@@ -24,7 +24,7 @@
   }
 
   &__cell--title {
-    font-size: $h2-devices;
+    font-size: 1.5rem;
 
   }
 
@@ -42,6 +42,9 @@
 @media screen and (min-width: $breakpoint-tablet) {
 
   .intro {
+    gap: 50px;
+    
+
     &__cell--name {
       font-size: 3rem;
       // text-align: center;
