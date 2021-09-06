@@ -248,6 +248,110 @@ section .section-header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, #0a9369 100%);
 }
 
+@media screen and (min-width: 768px) {
+  .project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+    height: 80vh;
+    width: 100%;
+    border-radius: 50px;
+  }
+  .project__cell--title, .project__cell--desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .project__cell--code, .project__cell--buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project__cell--title {
+    grid-column: 2/6;
+    grid-row: 1/4;
+  }
+  .project__cell--image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: 7/12;
+    grid-row: 2/12;
+  }
+  .project__cell--image img {
+    height: 600px;
+    max-height: 1000px;
+  }
+  .project__cell--desc {
+    grid-row: 4/8;
+    text-align: left;
+  }
+  .project__cell--code {
+    grid-column: 2/6;
+    grid-row: 8/10;
+  }
+  .project__cell--code img {
+    width: 50px;
+    max-width: 80px;
+  }
+  .project__cell--buttons {
+    grid-column: 2/6;
+    grid-row: 10/12;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+    height: 80vh;
+    width: 100%;
+    border-radius: 50px;
+  }
+  .project__cell--title, .project__cell--desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .project__cell--code, .project__cell--buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project__cell--title {
+    grid-column: 2/6;
+    grid-row: 1/4;
+  }
+  .project__cell--image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: 7/12;
+    grid-row: 2/12;
+  }
+  .project__cell--image img {
+    height: 600px;
+    max-height: 1000px;
+  }
+  .project__cell--desc {
+    grid-row: 4/8;
+    text-align: left;
+  }
+  .project__cell--code {
+    grid-column: 2/6;
+    grid-row: 8/10;
+  }
+  .project__cell--code img {
+    width: 80px;
+    max-width: 100px;
+  }
+  .project__cell--buttons {
+    grid-column: 2/6;
+    grid-row: 10/12;
+  }
+}
 .project__cell--buttons a {
   background-color: #FE8163;
   padding: 10px 0;

@@ -60,3 +60,136 @@
 background: linear-gradient(0deg, rgba(0,0,0,0) 51%, rgba(10,147,105,1) 100%);
 }
 
+@media screen and (min-width: $breakpoint-tablet){
+  
+  .project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+    height: 80vh;
+    width: 100%;
+    border-radius: 50px;
+  
+    &__cell--title, &__cell--desc {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__cell--code, &__cell--buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    &__cell--title {
+      grid-column: 2 / 6 ;
+      grid-row: 1 / 4 ;
+    }
+
+    &__cell--image {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      grid-column: 7 / 12 ;
+      grid-row: 2 / 12;
+    }
+
+    &__cell--image img {
+      // width: 100%;
+      height: 600px;
+      max-height: 1000px;
+    }
+
+    &__cell--desc {
+      grid-row: 4 / 8 ;
+      text-align: left;
+    }
+
+    &__cell--code {
+      grid-column: 2 / 6 ;
+      grid-row: 8 / 10 ;
+    }
+
+    &__cell--code img {
+      width: 50px;
+      max-width: 80px
+    }
+
+    &__cell--buttons {
+      grid-column: 2 / 6 ;
+      grid-row: 10 / 12 ;
+    }
+
+  }
+}
+
+
+@media screen and (min-width: $breakpoint-desktop) {
+
+  .project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+    height: 80vh;
+    width: 100%;
+    border-radius: 50px;
+  
+    &__cell--title, &__cell--desc {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__cell--code, &__cell--buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    &__cell--title {
+      grid-column: 2 / 6 ;
+      grid-row: 1 / 4 ;
+    }
+
+    &__cell--image {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      grid-column: 7 / 12 ;
+      grid-row: 2 / 12;
+    }
+
+    &__cell--image img {
+      // width: 100%;
+      height: 600px;
+      max-height: 1000px;
+    }
+
+    &__cell--desc {
+      grid-row: 4 / 8 ;
+      text-align: left;
+    }
+
+    &__cell--code {
+      grid-column: 2 / 6 ;
+      grid-row: 8 / 10 ;
+    }
+
+    &__cell--code img {
+      width: 80px;
+      max-width: 100px
+    }
+
+    &__cell--buttons {
+      grid-column: 2 / 6 ;
+      grid-row: 10 / 12 ;
+    }
+
+  }
+
+}
