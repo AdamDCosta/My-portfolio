@@ -67,8 +67,38 @@
       }
     }
   }
+}
 
+@media screen and (min-width: $breakpoint-desktop) {
 
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    height: 70vh;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+  
+    &__cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
+    &__cell--name, &__cell--button {
+      grid-column: 1 / 3 ;
+    }
+
+    &__cell--title {
+      grid-column: 1 / 2 ;
+    }
+
+    &__cell--profile {
+      grid-column: 2 / 3 ;
+    }
+  }
 
 }
