@@ -143,9 +143,10 @@ header::before {
   top: 2vh;
 }
 .nav__links {
-  display: flex;
+  display: none;
   width: 100%;
   z-index: 10;
+  background: linear-gradient(45deg, #001219 0%, #005f73 100%);
 }
 .nav__links ul {
   display: flex;
@@ -158,13 +159,11 @@ header::before {
   text-align: center;
 }
 .nav__links li a {
-  display: none;
   text-decoration: none;
   font-size: 2rem;
-  z-index: 10;
 }
 
-.nav__links li a.active {
+.nav__links.active {
   display: block;
 }
 
@@ -583,4 +582,21 @@ section .section-header {
 }
 .skills__cell--js, .skills__cell--node, .skills__cell--github {
   grid-column: 3/4;
+}
+
+@media screen and (min-width: 768px) {
+  .skills-section .section-header {
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 50vh;
+    width: 75%;
+  }
+  .skills__cell {
+    grid-column: auto;
+  }
 }

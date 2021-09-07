@@ -27,3 +27,26 @@
   }
 
 }
+
+@media screen and (min-width: $breakpoint-tablet){
+
+  .skills-section .section-header {
+    margin-bottom: 20px;
+  }
+  
+  .skills {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 50vh;
+    width: 75%;
+    // margin: auto;
+
+    &__cell {
+      grid-column: auto;
+    }
+
+  }
+
+
+}
