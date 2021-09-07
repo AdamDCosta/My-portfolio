@@ -4,7 +4,7 @@
 .carousel {
 
   &__cell {
-    height: 80vh;
+    height: 90vh;
   }
   
   &__cell--project2, &__cell--project3 {
@@ -15,9 +15,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-  
-  
+    justify-content: space-evenly; 
+    
   
   }
   
@@ -58,6 +57,61 @@
     grid-column: 3 / 4 ;
   }
 
+  &__cell--left, &__cell--right {
   
+    img:hover {
+      filter: brightness(150%)
+    }
+  
+  }
+
+    
 }
 
+@media screen and (min-width: $breakpoint-tablet){
+
+  .carousel {
+    gap: 30px;
+
+    &__cell {
+      padding: 20px;
+    }
+
+    &__cell--project2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+  
+    }
+
+    &__cell--right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: 4 / 5 ;
+    }
+  }
+  
+
+}
+
+@media screen and (min-width: $breakpoint-desktop){
+
+  .carousel {
+
+    &__cell--project3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    &__cell--right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: 5 / 6 ;
+    }
+  }
+}  

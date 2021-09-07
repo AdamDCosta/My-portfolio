@@ -22,3 +22,10 @@
     width: 50px;
   }
 }
+
+.project__cell--buttons, .carousel__cell--buttons {
+
+  a:hover {
+    background-color: $color-blue-light;
+  }
+}

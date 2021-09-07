@@ -131,7 +131,7 @@ header::before {
   margin-left: 10px;
 }
 .nav__icons img:hover {
-  color: #94D2BD;
+  filter: brightness(150%);
 }
 .nav__icons {
   margin: 2vh 0 2vh 20px;
@@ -141,6 +141,9 @@ header::before {
   position: absolute;
   right: 20px;
   top: 2vh;
+}
+.nav__menu:hover {
+  filter: brightness(150%);
 }
 .nav__links {
   display: none;
@@ -409,6 +412,10 @@ section .section-header {
   width: 50px;
 }
 
+.project__cell--buttons a:hover, .carousel__cell--buttons a:hover {
+  background-color: #94D2BD;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -531,6 +538,10 @@ section .section-header {
   border-radius: 50px;
 }
 
+.cta-button:hover {
+  background-color: #94D2BD;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -586,6 +597,7 @@ section .section-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s;
 }
 .skills__cell--html, .skills__cell--figma, .skills__cell--scss, .skills__cell--java {
   grid-column: 2/3;
@@ -595,6 +607,10 @@ section .section-header {
 }
 .skills__cell--js, .skills__cell--node, .skills__cell--github {
   grid-column: 3/4;
+}
+.skills__cell img:hover {
+  transform: scale(1.5);
+  filter: brightness(150%);
 }
 
 @media screen and (min-width: 768px) {
@@ -624,8 +640,18 @@ section .section-header {
   grid-template-columns: 1fr 3fr 1fr;
 }
 
+@media screen and (min-width: 768px) {
+  .carousel {
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel {
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  }
+}
 .carousel__cell {
-  height: 80vh;
+  height: 90vh;
 }
 .carousel__cell--project2, .carousel__cell--project3 {
   display: none;
@@ -665,4 +691,42 @@ section .section-header {
   justify-content: center;
   align-items: center;
   grid-column: 3/4;
+}
+.carousel__cell--left img:hover, .carousel__cell--right img:hover {
+  filter: brightness(150%);
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    gap: 30px;
+  }
+  .carousel__cell {
+    padding: 20px;
+  }
+  .carousel__cell--project2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .carousel__cell--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4/5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel__cell--project3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .carousel__cell--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 5/6;
+  }
 }
