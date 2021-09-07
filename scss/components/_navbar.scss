@@ -37,7 +37,7 @@
     width: 100%;
     z-index: 10;
     // height: 100vh;
-    background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+    // background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
   }
 
 
@@ -67,6 +67,8 @@
 
 .nav__links.active {
   display: block;
+  background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+  
 }
 
 @media screen and (min-width: $breakpoint-tablet) {

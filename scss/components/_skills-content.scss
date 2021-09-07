@@ -37,13 +37,20 @@
   .skills {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 50px;
     height: 50vh;
     width: 75%;
     // margin: auto;
 
     &__cell {
       grid-column: auto;
+    }
+
+    img {
+      height: 100%;
+      max-height: 150px;
+      width: 100%;
+      max-width: 150px;
     }
 
   }
