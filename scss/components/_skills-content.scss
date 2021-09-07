@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform .2s;
   }
 
   &__cell--html, &__cell--figma, &__cell--scss, &__cell--java {
@@ -24,6 +25,13 @@
 
   &__cell--js, &__cell--node, &__cell--github {
     grid-column: 3 / 4;
+  }
+
+  &__cell {
+    img:hover{
+      transform: scale(1.5);
+      filter: brightness(150%);
+    }
   }
 
 }
