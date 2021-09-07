@@ -7,3 +7,18 @@
   border-radius: 50px;
   text-align: center;
 }
+
+.carousel__cell--buttons a {
+  background-color: $color-action;
+  padding: 10px 0;
+  width: 40%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.carousel__cell--left, .carousel__cell--right {
+
+  img {
+    width: 50px;
+  }
+}

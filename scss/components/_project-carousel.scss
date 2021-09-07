@@ -1,34 +1,63 @@
 @use "../base/abstracts" as *;
 
-.carousel__cell {
-  height: 80vh;
+
+.carousel {
+
+  &__cell {
+    height: 80vh;
+  }
+  
+  &__cell--project2, &__cell--project3 {
+    display: none;
+  }
+  
+  &__cell--project1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  
+  
+  }
+  
+  &__cell--image {
+    min-height: 250px;
+    max-height: 450px;
+
+    img {
+      width: 100%
+    }
+  }
+
+  &__cell--desc {
+    text-align: center;
+  }
+  
+  &__cell--code, &__cell--buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  &__cell--code img {
+    width: 60px;
+  }
+
+  &__cell--left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2 ;
+  }
+
+  &__cell--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 4 ;
+  }
+
+  
 }
 
-.carousel__cell--project2, .carousel__cell--project3 {
-  display: none;
-}
-
-.carousel__cell--project1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-
-
-
-}
-
-.carousel__cell--image img {
-  min-height: 200px;
-  max-height: 450px;
-}
-
-.carousel__cell--code, .carousel__cell--buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.carousel__cell--code img {
-  width: 60px;
-}

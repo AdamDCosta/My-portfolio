@@ -397,6 +397,18 @@ section .section-header {
   text-align: center;
 }
 
+.carousel__cell--buttons a {
+  background-color: #FE8163;
+  padding: 10px 0;
+  width: 40%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.carousel__cell--left img, .carousel__cell--right img {
+  width: 50px;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -546,7 +558,8 @@ section .section-header {
   grid-column: 2/5;
 }
 .contact__cell--email-address {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  grid-column: 2/5;
 }
 .contact .cta-button {
   font-size: 2rem;
@@ -614,29 +627,42 @@ section .section-header {
 .carousel__cell {
   height: 80vh;
 }
-
 .carousel__cell--project2, .carousel__cell--project3 {
   display: none;
 }
-
 .carousel__cell--project1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-
-.carousel__cell--image img {
-  min-height: 200px;
+.carousel__cell--image {
+  min-height: 250px;
   max-height: 450px;
 }
-
+.carousel__cell--image img {
+  width: 100%;
+}
+.carousel__cell--desc {
+  text-align: center;
+}
 .carousel__cell--code, .carousel__cell--buttons {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
 .carousel__cell--code img {
   width: 60px;
+}
+.carousel__cell--left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+}
+.carousel__cell--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
 }
