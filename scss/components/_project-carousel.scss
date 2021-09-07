@@ -1,0 +1,34 @@
+@use "../base/abstracts" as *;
+
+.carousel__cell {
+  height: 80vh;
+}
+
+.carousel__cell--project2, .carousel__cell--project3 {
+  display: none;
+}
+
+.carousel__cell--project1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+
+}
+
+.carousel__cell--image img {
+  min-height: 200px;
+  max-height: 450px;
+}
+
+.carousel__cell--code, .carousel__cell--buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carousel__cell--code img {
+  width: 60px;
+}
