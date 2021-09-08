@@ -91,6 +91,12 @@
       align-items: center;
       grid-column: 4 / 5 ;
     }
+
+    &__cell--code {
+      img {
+        width: 40px;
+      }
+    }
   }
   
 

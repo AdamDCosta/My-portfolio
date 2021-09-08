@@ -40,6 +40,11 @@
 
   .skills-section .section-header {
     margin-bottom: 20px;
+    
+    h2 {
+      text-decoration: underline solid $color-green;
+      // line-height: 1.5;
+    }
   }
   
   .skills {
@@ -62,6 +67,7 @@
     }
 
   }
+
 
 
 }

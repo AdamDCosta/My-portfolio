@@ -117,8 +117,20 @@
       img:nth-child(2) {
         padding: 0 5px;
       }
+      img:hover {
+        filter: brightness(150%)
+      }
     }
 
+
+
+  }
+
+  .about-section {
+
+    h2 {
+      text-decoration: underline solid $color-action;
+    }
   }
 
 }

@@ -48,10 +48,19 @@
     &__cell--name {
       font-size: 3rem;
       // text-align: center;
+      h1 {
+        border-bottom: 5px solid $color-green;
+      }
     }
 
     &__cell--title {
       font-size: $h2-desktop;
+      // display: flex;
+      // align-items: flex-end;
+
+      h2 {
+        // border-bottom: 5px solid $color-blue-light;
+      }
   
     }
 
@@ -101,6 +110,13 @@
 
     &__cell--profile {
       grid-column: 2 / 3 ;
+      // border-bottom: 5px solid $color-blue-light;
+    }
+
+    &__cell--title, &__cell--profile {
+      // display: flex;
+      // align-items: flex-end;
+
     }
   }
 
