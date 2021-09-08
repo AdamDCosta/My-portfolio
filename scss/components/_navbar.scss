@@ -65,6 +65,7 @@
   &__links li a {
     text-decoration: none;
     font-size: 2rem;
+    color: $color-blue-light;
     // z-index: 10;
   }
 
@@ -73,7 +74,28 @@
 .nav__links.active {
   display: block;
   background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+  z-index: 10;
+
+  ul {
+    li {
+      margin: auto;
+      font-size: 2rem;
+      
+      li a {
+        color: $color-blue-light;
+
+      }
+    }
+
+    li a:hover {
+      color: $color-action;
+    }
+
+    
+    
+  }
   
+
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
