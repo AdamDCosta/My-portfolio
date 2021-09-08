@@ -68,7 +68,7 @@
       height: auto;
       max-height: 100%;
       width: 100%;
-      max-width: 100%;
+      max-width: 400px;
     }
 
     &__cell--intro, &__cell--desc {
@@ -105,17 +105,39 @@
 
     &__cell--contact {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: flex-end;
       grid-column: 2 / 12 ;
       grid-row: 11 / 13 ;
       border-top: 5px solid $color-blue-light;
+      font-size: 1.2rem;
+    }
+
+    &__cell--icons {
+      img:nth-child(2) {
+        padding: 0 5px;
+      }
     }
 
   }
 
 }
 
+@media screen and (min-width: $breakpoint-desktop) {
 
+  .about {
 
+    &__cell--desc {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__cell--icons {
+      img:nth-child(2) {
+        padding: 0 20px;
+      }
+    }
+  }
+}
 

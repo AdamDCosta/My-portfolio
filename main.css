@@ -519,7 +519,7 @@ section .section-header {
     height: auto;
     max-height: 100%;
     width: 100%;
-    max-width: 100%;
+    max-width: 400px;
   }
   .about__cell--intro, .about__cell--desc {
     display: flex;
@@ -549,11 +549,23 @@ section .section-header {
   }
   .about__cell--contact {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
     grid-column: 2/12;
     grid-row: 11/13;
     border-top: 5px solid #94D2BD;
+    font-size: 1.2rem;
+  }
+  .about__cell--icons img:nth-child(2) {
+    padding: 0 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__cell--desc p {
+    font-size: 1.2rem;
+  }
+  .about__cell--icons img:nth-child(2) {
+    padding: 0 20px;
   }
 }
 .cta-button {
