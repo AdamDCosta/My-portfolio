@@ -147,6 +147,7 @@ header::before {
 }
 .nav__menu:hover {
   filter: brightness(150%);
+  cursor: pointer;
 }
 .nav__links {
   display: none;
@@ -676,9 +677,17 @@ section .section-header {
   justify-content: center;
   height: 100vh;
   background: #001219;
-  background: linear-gradient(135deg, #001219 0%, #005f73 100%);
+  background: #005f73;
+  background: linear-gradient(0deg, #005f73 15%, #fe8163 100%);
 }
 
+@media screen and (min-width: 1024px) {
+  .skills-section {
+    height: 60vh;
+    background: #005f73;
+    background: linear-gradient(0deg, #005f73 15%, #fe8163 100%);
+  }
+}
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -718,7 +727,7 @@ section .section-header {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 50px;
-    height: 50vh;
+    height: 60vh;
     width: 75%;
   }
   .skills__cell {
@@ -729,6 +738,11 @@ section .section-header {
     max-height: 150px;
     width: 100%;
     max-width: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .skills-section .skills {
+    height: 30vh;
   }
 }
 .carousel {

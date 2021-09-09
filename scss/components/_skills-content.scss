@@ -51,7 +51,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 50px;
-    height: 50vh;
+    height: 60vh;
     width: 75%;
     // margin: auto;
 
@@ -69,5 +69,17 @@
   }
 
 
+
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+
+  .skills-section {
+
+    .skills {
+      height: 30vh;
+  
+    }
+  }
 
 }
