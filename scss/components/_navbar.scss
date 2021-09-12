@@ -1,8 +1,7 @@
 @use "../base/abstracts" as *;
 
 .nav {
-  // background: transparent;
-  // background-color: transparent;
+  
   background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
   display: flex;
   flex-direction: column;
@@ -16,6 +15,7 @@
   &__icons {
     // margin: 2vh 0 2vh 20px;
     padding: 2vh 20px 2vh 20px;
+    display: flex;
   }
 
   &__icons a:nth-child(2) {
@@ -125,24 +125,27 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      width: 80%;
+      
     }
 
     &__links ul {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-around;
       text-align: center;
       padding: none;
       padding-right: 20px;
       border: none;
       height: 10vh;
       list-style: none;
+      width: 80%;
 
     }
 
     &__links li {
-      padding: 15px;
+      padding: 20px;
     }
 
     &__links li a {
@@ -159,7 +162,7 @@
     &__icons {
       margin: 2vh 0 2vh 20px;
       padding-right: 20px;
-      width: 40%;
+      width: 20%;
     }
 
     
