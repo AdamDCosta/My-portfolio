@@ -1,17 +1,22 @@
 @use "../base/abstracts" as *;
 
 .nav {
-  background: transparent;
+  // background: transparent;
   // background-color: transparent;
   background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 10vh;
-  // padding: 10px;
-  // position: sticky;
   width: 100%;
+  position: relative; // SO I CAN POSITION THE HAMBURGER ICON
   
+  ////// --- ICONS POSITIONING
+
+  &__icons {
+    // margin: 2vh 0 2vh 20px;
+    padding: 2vh 20px 2vh 20px;
+  }
 
   &__icons a:nth-child(2) {
     margin: 0 10px;
@@ -21,14 +26,10 @@
     filter: brightness(150%)
   }
 
-  
-  &__icons {
-    margin: 2vh 0 2vh 20px;
-    padding-right: 20px;
-  }
+  /// --- HAMBURGER ICON POSITIONING
   
   &__menu {
-    position: absolute;
+    position: absolute; // POSTION RELATIVE TO NEAREST ANCESTOR (IN THIS CASE THE NAVBAR -> REMOVED FROM NORMAL FLOW SO I COULD PLACE IT IN THE TOP CORNER INSTEAD OF WITH THE FLEX-COLUMN
     right: 20px;
     top: 2vh;
   }
@@ -39,28 +40,22 @@
   }
 
   &__links {
-    display: none;
-    // display: flex;
-    width: 100%;
-    z-index: 10;
-    // height: 100vh;
-    // background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
-  }
-
-
+    display: none; // HIDES THE LINKS DIV
+    
 
   &__links ul {
     display: flex;
     flex-direction: column;
-    // justify-content: space-evenly;
     width: 100%;
-    height: 90vh;
+    height: 90vh; // HEIGHT AND WIDTH TO TAKE UP THE WHOLE SCREEN
+    list-style: none;
   }
 
   &__links li {
     list-style: none;
     text-align: center;
-    // margin: 80px;
+    font-size: 2rem;
+    
 
   }
 
@@ -68,23 +63,43 @@
     text-decoration: none;
     font-size: 2rem;
     color: $color-blue-light;
-    // z-index: 10;
   }
 
-}
+  &__li a:hover {
+    color: $color-action;
+  } 
+
+} 
+
+}  
+
+// 
 
 .nav__links.active {
   display: block;
   background: linear-gradient(45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+  width: 100%;
   z-index: 10;
+  // height: 90vh;
 
   ul {
+
+    padding: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh; // HEIGHT AND WIDTH TO TAKE UP THE WHOLE SCREEN
+    list-style: none;
+
     li {
       margin: auto;
       font-size: 2rem;
+    }
       
       li a {
         color: $color-blue-light;
+        text-decoration: none;
 
       }
     }
@@ -95,7 +110,6 @@
 
   }
 
-}
 
 @media screen and (min-width: $breakpoint-tablet) {
 
@@ -123,6 +137,8 @@
       padding-right: 20px;
       border: none;
       height: 10vh;
+      list-style: none;
+
     }
 
     &__links li {
@@ -153,5 +169,4 @@
     }
 
   }
-
 }
