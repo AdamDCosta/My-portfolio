@@ -353,7 +353,7 @@ section .section-header {
     justify-content: flex-start;
     align-items: center;
     grid-column: 7/12;
-    grid-row: 2/12;
+    grid-row: 2/11;
   }
   .project__cell--image img {
     max-width: 100%;
@@ -399,7 +399,7 @@ section .section-header {
     justify-content: flex-start;
     align-items: center;
     grid-column: 2/6;
-    grid-row: 2/12;
+    grid-row: 2/11;
   }
   .project-2__cell--code {
     grid-column: 7/12;

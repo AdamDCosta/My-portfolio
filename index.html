@@ -1,340 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adam D'Costa Web Developer</title>
-  <meta name="description" content="Adam D'Costa Web Developer Project Portfolio">
-  <link rel="stylesheet" href="./main.css">
-  
-</head>
-<body>
-
-  <nav class="nav">
-    
-    <div class="nav__icons">
-      <a href="https://www.linkedin.com/in/adam-d-costa-a1750248/"><img src="./assets/linkedIn-icon.svg" alt="LinkedIn profile"></a>
-      <a href="https://github.com/AdamDCosta"><img src="./assets/github-icon.svg" alt="GitHub profile"></a>
-      <a href="#">
-        <a href="https://github.com/AdamDCosta/My-portfolio/blob/main/assets/CV/Adam%20D'Costa%20CV%202021%20Portfolio.pdf"><img src="assets\cv-icon.svg" alt="CV download"> </a>
-    </div>
-
-    <div class="nav__links">
-      <ul>
-        <li><a href="#introduction" class="nav__links--li">HOME</a></li>
-        <li><a href="#portfolio" class="nav__links--li">WORK</a></li>
-        <li><a href="#about-h2" class="nav__links--li">ABOUT</a></li>
-        <li><a href="#contact-h2" class="nav__links--li">CONTACT</a></li>
-      </ul>
-    </div>
-
-    <img class="nav__menu" src="./assets/mobile-menu-icon.svg" alt="Menu">
-
-  </nav>
-
-  <header>
-    <div class="intro" id="introduction">
-      <div class="intro__cell intro__cell--name">
-      <h1>ADAM
-      <br>
-          D'COSTA
-      </h1>
-      </div>
-      <div class="intro__cell intro__cell--title">
-        <h2>
-        Web Developer
-        </h2>
-      </div>
-      <div class="intro__cell intro__cell--profile">
-        <p>Hi, I’m Adam and I’m currently undergoing a 12-week intensive course with _nology in order to become a web developer in the near future. Please see my recent projects below.
-        </p>
-      </div>
-      
-      <div class="intro__cell intro__cell--button">
-        <a class="cta-button" href="#portfolio">See My Work</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam D'Costa Web Developer</title>
+    <meta
+      name="description"
+      content="Adam D'Costa Web Developer Project Portfolio"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__icons">
+        <a href="https://www.linkedin.com/in/adam-d-costa-a1750248/">
+          <img src="./assets/linkedIn-icon.svg" alt="LinkedIn profile" />
+        </a>
+        <a href="https://github.com/AdamDCosta">
+          <img src="./assets/github-icon.svg" alt="GitHub profile" />
+        </a>
+        <a
+          href="https://github.com/AdamDCosta/My-portfolio/blob/main/assets/CV/Adam%20D'Costa%20CV%202021%20new.pdf">
+          <img src="assets\cv-icon.svg" alt="CV download" />
+        </a>
       </div>
 
-    </div> 
-  </header>
-
-  <section class="project-section-1">
-    <div class="section-header">
-      <h2 id="portfolio">Portfolio</h2>
-    </div>
-    <div class="project project-1">
-      <div class="project__cell project__cell--title"><h3>Punk API</h3>
+      <div class="nav__links">
+        <ul>
+          <li><a href="#introduction" class="nav__links--li">HOME</a></li>
+          <li><a href="#portfolio" class="nav__links--li">WORK</a></li>
+          <li><a href="#about-h2" class="nav__links--li">ABOUT</a></li>
+          <li><a href="#contact-button" class="nav__links--li">CONTACT</a></li>
+        </ul>
       </div>
-      <div class="project__cell project__cell--image">
-        <img class="image" src="./assets/project-images/punk-api.png" alt="Punk API">
-        <!-- <div class="project__cell-overlay">
+
+      <img class="nav__menu" src="./assets/mobile-menu-icon.svg" alt="Menu" />
+    </nav>
+
+    <header>
+      <div class="intro" id="introduction">
+        <div class="intro__cell intro__cell--name">
+          <h1>
+            ADAM
+            <br />
+            D'COSTA
+          </h1>
+        </div>
+        <div class="intro__cell intro__cell--title">
+          <h2>Web Developer</h2>
+        </div>
+        <div class="intro__cell intro__cell--profile">
+          <p>
+            Hi, I’m Adam and I’m currently undergoing a 12-week intensive course
+            with _nology in order to become a web developer in the near future.
+            Please see my recent projects below.
+          </p>
+        </div>
+
+        <div class="intro__cell intro__cell--button">
+          <a class="cta-button" href="#portfolio">See My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="project-section-1">
+      <div class="section-header">
+        <h2 id="portfolio">Portfolio</h2>
+      </div>
+      <div class="project project-1">
+        <div class="project__cell project__cell--title">
+          <h3>Punk API</h3>
+        </div>
+        <div class="project__cell project__cell--image">
+          <img
+            class="image"
+            src="./assets/project-images/punk-api.png"
+            alt="Punk API"
+          >
+          <!-- <div class="project__cell-overlay">
           <a href="#">Link to project</a>
         </div> -->
-      </div>
-      <div class="project__cell project__cell--desc">
-        <p>A web application built in React using the Brewdog Punk API. It has search and filter functionality. I used routing and useParams so that each beer tile routes though to an individual page with more information.</p>
-      </div>
-      <div class="project__cell--desc-large">
-        <p>
-          A web application built in React using the Brewdog Punk API. It has search and filter functionality. It has the fetch inside a useEffect taking in the search term and filter states as the dependencies. I used routing and useParams so that each beer tile routes though to an individual page with more information.
-        </p>
-      </div>
-      <div class="project__cell project__cell--code">
-        <img src="assets\tech-stack-icons\react.svg" alt="React">
-        <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5"> 
-        <img src="assets\tech-stack-icons\sass.svg" alt="SCSS">
-        <img src="assets\tech-stack-icons\JS.svg" alt="Javacript">
-      </div>
-      <div class="project__cell project__cell--buttons">
-        <a href="https://adamdcosta.github.io/beers-api/">
-          <p>Preview</p>
-        </a>
-        <a href="https://github.com/AdamDCosta/beers-api">
-          Code
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="project-section-2">
-    <div class="project project-2">
-      <div class="project__cell project__cell--title"><h3>Connect Four</h3>
-      </div>
-      <div class="project__cell project__cell--image">
-        <img class="image" src="./assets/project-images/connect-four-gameboard.JPG" alt="Connect Four Javascript Game">
-      </div>
-      <div class="project__cell project__cell--desc">
-        <p>This is a connect four game written in vanilla javascript and styled with SCSS, using BEM naming conventions. I used a class so that I'd have a game object with all the functionality inside it. You can win vertically, horizontally and diagonally.</p>
-      </div>
-      <div class="project__cell--desc-large">
-        <p>
-          This is a connect four game written in vanilla javascript and styled with SCSS, using BEM naming conventions. At this point in the course I hadn't explored JS classes so for this I wanted to use a class and have a game object which had all the functionality inside it. You can win vertically, horizontally and diagonally.
-        </p>
-      </div>
-      <div class="project__cell project__cell--code">
-        <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5"> 
-        <img src="assets\tech-stack-icons\sass.svg" alt="SCSS">
-        <img src="assets\tech-stack-icons\JS.svg" alt="Javacript">
-      </div>
-      <div class="project__cell project__cell--buttons">
-        <a href="https://adamdcosta.github.io/js-connect-four/">
-          <p>Preview</p>
-        </a>
-        <a href="https://github.com/AdamDCosta/js-connect-four">
-          Code
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-section-3">
-    <div class="project project-3">
-      <div class="project__cell project__cell--title"><h3>JS Calculator</h3>
-      </div>
-      <div class="project__cell project__cell--image">
-        <img class="image" src="./assets/project-images/JS calculator image.JPG" alt="Javascript calculator">
-      </div>
-      <div class="project__cell project__cell--desc">
-        <p>This is a mobile-first calculator app written in vanilla Javascript and styled with SCSS. It involved using iterators, control flow and interacting with DOM elements.</p>
-      </div>
-      <div class="project__cell--desc-large">
-        <p>
-          This is a mobile-first calculator app written in vanilla Javascript and styled with SCSS.
-
-          It was a project set during week 4 on the full-time _nology course. The aims were to take what we had learnt up to that point to produce a working calculator, implementing a mobile-first approach and to practice writing psuedocode.
-        </p>
-      </div>
-      <div class="project__cell project__cell--code">
-        <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5"> 
-        <img src="assets\tech-stack-icons\sass.svg" alt="SCSS">
-        <img src="assets\tech-stack-icons\JS.svg" alt="Javacript">
-      </div>
-      <div class="project__cell project__cell--buttons">
-        <a href="https://adamdcosta.github.io/JS-Calculator/">
-          <p>Preview</p>
-        </a>
-        <a href="https://github.com/AdamDCosta/JS-Calculator">
-          Code
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="carousel">
-    <div class="carousel__cell carousel__cell--left">
-      <img src="assets\left-button.svg" alt="click button">
-    </div>
-    <div class="carousel__cell carousel__cell--project1">
-      <div class="carousel__cell--title"><h3>Project 4</h3>
-      </div>
-      <div class="carousel__cell--image">
-        <img src="./assets/portfolio-main.svg" alt="Portfolio Image 1">
-      </div>
-      <div class="carousel__cell--desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ab iste totam deleniti suscipit provident saepe pariatur, quam quibusdam maxime.</p>
-      </div>
-        <div class="carousel__cell--code">
-        <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5"> 
-        <img src="assets\tech-stack-icons\sass.svg" alt="SCSS">
-        <img src="assets\tech-stack-icons\figma.svg" alt="Figma">
-        <img src="assets\tech-stack-icons\JS.svg" alt="Javacript">
-      </div>
-      <div class="carousel__cell--buttons">
-        <a href="">
-          <p>Preview</p>
-        </a>
-        <a href="">
-          Code
-        </a>
-      </div>
-    </div>
-    <div class="carousel__cell carousel__cell--project2">
-      <div class="carousel__cell--title"><h3>Project 5</h3>
-      </div>
-      <div class="carousel__cell--image">
-        <img src="./assets/portfolio-main.svg" alt="Portfolio Image 1">
-      </div>
-      <div class="carousel__cell--desc">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eius nemo voluptatibus exercitationem fugit ipsam! Magnam itaque fugiat obcaecati ad!</p>
-      </div>
-      <div class="carousel__cell--code">
-        <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5"> 
-        <img src="assets\tech-stack-icons\sass.svg" alt="SCSS">
-        <img src="assets\tech-stack-icons\figma.svg" alt="Figma">
-        <img src="assets\tech-stack-icons\JS.svg" alt="Javacript">
-      </div>
-      <div class="carousel__cell--buttons">
-        <a href="">
-          <p>Preview</p>
-        </a>
-        <a href="">
-          Code
-        </a>
-      </div>
-    </div>
-    <div class="carousel__cell carousel__cell--project3">
-      <div class="carousel__cell--title"><h3>Project 6</h3>
-      </div>
-      <div class="carousel__cell--image">
-        <img src="./assets/portfolio-main.svg" alt="Portfolio Image 1">
-      </div>
-      <div class="carousel__cell--desc">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eius nemo voluptatibus exercitationem fugit ipsam! Magnam itaque fugiat obcaecati ad!</p>
-      </div>
-      <div class="carousel__cell--code">
-        <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5"> 
-        <img src="assets\tech-stack-icons\sass.svg" alt="SCSS">
-        <img src="assets\tech-stack-icons\figma.svg" alt="Figma">
-        <img src="assets\tech-stack-icons\JS.svg" alt="Javacript">
-      </div>
-      <div class="carousel__cell--buttons">
-        <a href="">
-          <p>Preview</p>
-        </a>
-        <a href="">
-          Code
-        </a>
-      </div>
-    </div>
-    <div class="carousel__cell carousel__cell--right">
-      <img src="assets\right-button.svg" alt="click right">
-    </div>
-  </section>
-
-  <section class="skills-section">
-    <div class="section-header"> 
-      <h2>Tech Stack</h2>
-    </div>
-    <div class="skills">
-      <div class="skills__cell skills__cell--html">
-        <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5">
-      </div>
-      <div class="skills__cell skills__cell--css">
-        <img src="./assets/tech-stack-icons/CSS.svg" alt="CSS">
-      </div>
-      <div class="skills__cell skills__cell--js">
-        <img src="./assets/tech-stack-icons/JS.svg" alt="CSS">
-      </div>
-      <div class="skills__cell skills__cell--figma">
-        <img src="./assets/tech-stack-icons/figma.svg" alt="Figma">
-      </div>
-      <div class="skills__cell skills__cell--react">
-        <img src="assets\tech-stack-icons\react.svg" alt="React">
-      </div>
-      <div class="skills__cell skills__cell--node">
-        <img src="./assets/tech-stack-icons/node.svg" alt="Node.js">
-      </div>
-      <div class="skills__cell skills__cell--scss">
-        <img src="./assets/tech-stack-icons/sass.svg" alt="SCSS">
-      </div>
-      <div class="skills__cell skills__cell--git">
-        <img src="./assets/tech-stack-icons/git.svg" alt="Git">
-      </div>
-      <div class="skills__cell skills__cell--github">
-        <img src="./assets/tech-stack-icons/github.svg" alt="GitHub">
-      </div>
-      <div class="skills__cell skills__cell--java">
-        <img src="./assets/tech-stack-icons/java.svg" alt="Java">
-      </div>
-  </section>    
-
-  
-
-  <section class="about-section">
-    <div class="section-header">
-      <h2 id="about-h2">About</h2>
-    </div>
-    <div class="about">
-      <div class="about__cell about__cell--image">
-        <img src="assets\adam-portrait.jpg" alt="Adam D'Costa portrait">
-      </div>
-      <div class="about__cell about__cell--intro">
-        <p>Hello! I'm Adam, and I'm a web developer.</p>
-      </div>
-      <div class="about__cell about__cell--desc">
-        <p>After 8 years of working as a book buyer and bookseller I’ve decided to retrain and lead my career in an exciting new direction. A desire to learn new skills and reapply my customer-focused, flexible skillset developed in my previous roles has led me to undertake a 12-week intensive web development course at _nology with a view to moving into a new industry as a web developer. </p>
-      </div>
-      <div class="about__cell about__cell--link">
-        <a class="cta-button" href="mailto:adam.dcosta@googlemail.com">Contact Me</a>
-      </div>
-      <div class="about__cell about__cell--contact">
-        <p>© <script>document.write(new Date().getFullYear())</script> Adam D'Costa</p>
-        <div class="about__cell--icons">
-          <img src="assets\linkedIn-icon.svg" alt="LinkedIn profile">
-          <img src="assets\github-icon.svg" alt="GitHub profile">
-          <img src="assets\email-coral.svg" alt="Email link">
         </div>
-        <p>adam.dcosta@googlemail.com</p>
+        <div class="project__cell project__cell--desc">
+          <p>
+            A web application built in React using the Brewdog Punk API. It has
+            search and filter functionality. I used routing and useParams so
+            that each beer tile routes though to an individual page with more
+            information.
+          </p>
+        </div>
+        <div class="project__cell--desc-large">
+          <p>
+            A web application built in React using the Brewdog Punk API. It has
+            search and filter functionality. It has the fetch inside a useEffect
+            taking in the search term and filter states as the dependencies. I
+            used routing and useParams so that each beer tile routes though to
+            an individual page with more information.
+          </p>
+        </div>
+        <div class="project__cell project__cell--code">
+          <img src="assets\tech-stack-icons\react.svg" alt="React" />
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+          <img src="assets\tech-stack-icons\sass.svg" alt="SCSS" />
+          <img src="assets\tech-stack-icons\JS.svg" alt="Javacript" />
+        </div>
+        <div class="project__cell project__cell--buttons">
+          <a href="https://adamdcosta.github.io/beers-api/">
+            <p>Preview</p>
+          </a>
+          <a href="https://github.com/AdamDCosta/beers-api"> Code </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-
-  <section class="contact-section">
-    <div class="section-header">
-      <h2 id="contact-h2">Contact</h2>
-    </div>
-    <div class="contact">
-      <div class="contact__cell contact__cell--linkedIn">
-        <img src="assets\contact-icons\linkedin-blue.svg" alt="LinkedIn profile">
+    <section class="project-section-2">
+      <div class="project project-2">
+        <div class="project__cell project__cell--title">
+          <h3>Connect Four</h3>
+        </div>
+        <div class="project__cell project__cell--image">
+          <img
+            class="image"
+            src="./assets/project-images/connect-four-gameboard.JPG"
+            alt="Connect Four Javascript Game"
+          />
+        </div>
+        <div class="project__cell project__cell--desc">
+          <p>
+            This is a connect four game written in vanilla javascript and styled
+            with SCSS, using BEM naming conventions. I used a class so that I'd
+            have a game object with all the functionality inside it. You can win
+            vertically, horizontally and diagonally.
+          </p>
+        </div>
+        <div class="project__cell--desc-large">
+          <p>
+            This is a connect four game written in vanilla javascript and styled
+            with SCSS, using BEM naming conventions. At this point in the course
+            I hadn't explored JS classes so for this I wanted to use a class and
+            have a game object which had all the functionality inside it. You
+            can win vertically, horizontally and diagonally.
+          </p>
+        </div>
+        <div class="project__cell project__cell--code">
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+          <img src="assets\tech-stack-icons\sass.svg" alt="SCSS" />
+          <img src="assets\tech-stack-icons\JS.svg" alt="Javacript" />
+        </div>
+        <div class="project__cell project__cell--buttons">
+          <a href="https://adamdcosta.github.io/js-connect-four/">
+            <p>Preview</p>
+          </a>
+          <a href="https://github.com/AdamDCosta/js-connect-four"> Code 
+          </a>
+        </div>
       </div>
-      <div class="contact__cell contact__cell--github">
-        <img src="assets\contact-icons\github-blue.svg" alt="Github profile">
-      </div>
-      <div class="contact__cell contact__cell--email">
-        <img  src="assets\contact-icons\mail-icon.svg" alt="gmail address">
-      </div> 
-      <div class="contact__cell contact__cell--cv">
-        <a class="cta-button" href="">View My CV</a>
-      </div>
-      <div class="contact__cell contact__cell--email-address">
-        <p>adam.dcosta@googlemail.com</p>
-      </div>  
-    </div>
-  </section>
+    </section>
 
+    <section class="project-section-3">
+      <div class="project project-3">
+        <div class="project__cell project__cell--title">
+          <h3>JS Calculator</h3>
+        </div>
+        <div class="project__cell project__cell--image">
+          <img
+            class="image"
+            src="./assets/project-images/JS calculator image.JPG"
+            alt="Javascript calculator"
+          />
+        </div>
+        <div class="project__cell project__cell--desc">
+          <p>
+            This is a mobile-first calculator app written in vanilla Javascript
+            and styled with SCSS. It involved using iterators, control flow and
+            interacting with DOM elements.
+          </p>
+        </div>
+        <div class="project__cell--desc-large">
+          <p>
+            This is a mobile-first calculator app written in vanilla Javascript
+            and styled with SCSS. It was a project set during week 4 on the
+            full-time _nology course. The aims were to take what we had learnt
+            up to that point to produce a working calculator, implementing a
+            mobile-first approach and to practice writing psuedocode.
+          </p>
+        </div>
+        <div class="project__cell project__cell--code">
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+          <img src="assets\tech-stack-icons\sass.svg" alt="SCSS" />
+          <img src="assets\tech-stack-icons\JS.svg" alt="Javacript" />
+        </div>
+        <div class="project__cell project__cell--buttons">
+          <a href="https://adamdcosta.github.io/JS-Calculator/">
+            <p>Preview</p>
+          </a>
+          <a href="https://github.com/AdamDCosta/JS-Calculator"> Code </a>
+        </div>
+      </div>
+    </section>
 
-      <script src="./main.js" defer></script>
+    <section class="project-section-4">
+      <div class="project project-4">
+        <div class="project__cell project__cell--title">
+          <h3>JS Morse Code Translator</h3>
+        </div>
+        <div class="project__cell project__cell--image">
+          <img
+            class="image"
+            src="assets\project-images\morse-translator.png"
+            alt="Javascript calculator"
+          />
+        </div>
+        <div class="project__cell project__cell--desc">
+          <p>
+            This is a morse code translator written in vanilla javascript. I implemented a TDD approaching - writing unit tests for my functions first and using Jest to run them.
+          </p>
+        </div>
+        <div class="project__cell--desc-large">
+          <p>
+            This is a morse code translator written in vanilla javascript. I implemented a TDD approaching - writing unit tests for my functions first and using Jest to run them. I created an object with english as the key and morse as the value.
+          </p>
+        </div>
+        <div class="project__cell project__cell--code">
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+          <img src="assets\tech-stack-icons\sass.svg" alt="SCSS" />
+          <img src="assets\tech-stack-icons\JS.svg" alt="Javacript" />
+        </div>
+        <div class="project__cell project__cell--buttons">
+          <a href="https://adamdcosta.github.io/Morse-Translator/">
+            <p>Preview</p>
+          </a>
+          <a href="https://github.com/AdamDCosta/Morse-Translator"> Code </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="carousel">
+      <div class="carousel__cell carousel__cell--left">
+        <img src="assets\left-button.svg" alt="click button" />
+      </div>
+      <div class="carousel__cell carousel__cell--project1">
+        <div class="carousel__cell--title"><h3>Project 4</h3></div>
+        <div class="carousel__cell--image">
+          <img src="./assets/portfolio-main.svg" alt="Portfolio Image 1" />
+        </div>
+        <div class="carousel__cell--desc">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            ab iste totam deleniti suscipit provident saepe pariatur, quam
+            quibusdam maxime.
+          </p>
+        </div>
+        <div class="carousel__cell--code">
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+          <img src="assets\tech-stack-icons\sass.svg" alt="SCSS" />
+          <img src="assets\tech-stack-icons\figma.svg" alt="Figma" />
+          <img src="assets\tech-stack-icons\JS.svg" alt="Javacript" />
+        </div>
+        <div class="carousel__cell--buttons">
+          <a href="">
+            <p>Preview</p>
+          </a>
+          <a href=""> Code </a>
+        </div>
+      </div>
+      <div class="carousel__cell carousel__cell--project2">
+        <div class="carousel__cell--title"><h3>Project 5</h3></div>
+        <div class="carousel__cell--image">
+          <img src="./assets/portfolio-main.svg" alt="Portfolio Image 1" />
+        </div>
+        <div class="carousel__cell--desc">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eius
+            nemo voluptatibus exercitationem fugit ipsam! Magnam itaque fugiat
+            obcaecati ad!
+          </p>
+        </div>
+        <div class="carousel__cell--code">
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+          <img src="assets\tech-stack-icons\sass.svg" alt="SCSS" />
+          <img src="assets\tech-stack-icons\figma.svg" alt="Figma" />
+          <img src="assets\tech-stack-icons\JS.svg" alt="Javacript" />
+        </div>
+        <div class="carousel__cell--buttons">
+          <a href="">
+            <p>Preview</p>
+          </a>
+          <a href=""> Code </a>
+        </div>
+      </div>
+      <div class="carousel__cell carousel__cell--project3">
+        <div class="carousel__cell--title"><h3>Project 6</h3></div>
+        <div class="carousel__cell--image">
+          <img src="./assets/portfolio-main.svg" alt="Portfolio Image 1" />
+        </div>
+        <div class="carousel__cell--desc">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eius
+            nemo voluptatibus exercitationem fugit ipsam! Magnam itaque fugiat
+            obcaecati ad!
+          </p>
+        </div>
+        <div class="carousel__cell--code">
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+          <img src="assets\tech-stack-icons\sass.svg" alt="SCSS" />
+          <img src="assets\tech-stack-icons\figma.svg" alt="Figma" />
+          <img src="assets\tech-stack-icons\JS.svg" alt="Javacript" />
+        </div>
+        <div class="carousel__cell--buttons">
+          <a href="">
+            <p>Preview</p>
+          </a>
+          <a href=""> Code </a>
+        </div>
+      </div>
+      <div class="carousel__cell carousel__cell--right">
+        <img src="assets\right-button.svg" alt="click right" />
+      </div>
+    </section> -->
+
+    <section class="skills-section">
+      <div class="section-header">
+        <h2>Tech Stack</h2>
+      </div>
+      <div class="skills">
+        <div class="skills__cell skills__cell--html">
+          <img src="assets\tech-stack-icons\HTML5.svg" alt="HTML5" />
+        </div>
+        <div class="skills__cell skills__cell--css">
+          <img src="./assets/tech-stack-icons/CSS.svg" alt="CSS" />
+        </div>
+        <div class="skills__cell skills__cell--js">
+          <img src="./assets/tech-stack-icons/JS.svg" alt="CSS" />
+        </div>
+        <div class="skills__cell skills__cell--figma">
+          <img src="./assets/tech-stack-icons/figma.svg" alt="Figma" />
+        </div>
+        <div class="skills__cell skills__cell--react">
+          <img src="assets\tech-stack-icons\react.svg" alt="React" />
+        </div>
+        <div class="skills__cell skills__cell--node">
+          <img src="./assets/tech-stack-icons/node.svg" alt="Node.js" />
+        </div>
+        <div class="skills__cell skills__cell--scss">
+          <img src="./assets/tech-stack-icons/sass.svg" alt="SCSS" />
+        </div>
+        <div class="skills__cell skills__cell--git">
+          <img src="./assets/tech-stack-icons/git.svg" alt="Git" />
+        </div>
+        <div class="skills__cell skills__cell--github">
+          <img src="./assets/tech-stack-icons/github.svg" alt="GitHub" />
+        </div>
+        <div class="skills__cell skills__cell--java">
+          <img src="./assets/tech-stack-icons/java.svg" alt="Java" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="section-header">
+        <h2 id="about-h2">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__cell about__cell--image">
+          <img src="assets\adam-portrait.jpg" alt="Adam D'Costa portrait" />
+        </div>
+        <div class="about__cell about__cell--intro">
+          <p>Hello! I'm Adam, and I'm a web developer.</p>
+        </div>
+        <div class="about__cell about__cell--desc">
+          <p>
+            After 8 years of working as a book buyer and bookseller I’ve decided
+            to retrain and lead my career in an exciting new direction. A desire
+            to learn new skills and reapply my customer-focused, flexible
+            skillset developed in my previous roles has led me to undertake a
+            12-week intensive web development course at _nology with a view to
+            moving into a new industry as a web developer.
+          </p>
+        </div>
+        <div class="about__cell about__cell--link">
+          <a
+            class="cta-button"
+            id="contact-button"
+            href="mailto:adam.dcosta@googlemail.com"
+            >Contact Me</a
+          >
+        </div>
+        <div class="about__cell about__cell--contact">
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Adam D'Costa
+          </p>
+          <div class="about__cell--icons">
+            <a href="https://www.linkedin.com/in/adam-d-costa-a1750248/">
+              <img src="assets\linkedIn-icon.svg" alt="LinkedIn profile" />
+            </a>
+            <a href="https://github.com/AdamDCosta">
+              <img src="assets\github-icon.svg" alt="GitHub profile" />
+            </a>
+          
+            <a href="https://github.com/AdamDCosta/My-portfolio/blob/main/assets/CV/Adam%20D'Costa%20CV%202021%20new.pdf">
+              <img src="assets\cv-icon.svg" alt="Email link" />
+            </a>
+            
+          </div>
+          <p>adam.dcosta@googlemail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="section-header">
+        <h2 id="contact-h2">Contact</h2>
+      </div>
+      <div class="contact">
+        <div class="contact__cell contact__cell--linkedIn">
+          <a href="https://www.linkedin.com/in/adam-d-costa-a1750248/">
+            <img
+              src="assets\contact-icons\linkedin-blue.svg"
+              alt="LinkedIn profile"
+            />
+          </a>
+        </div>
+        <div class="contact__cell contact__cell--github">
+          <a href="https://github.com/AdamDCosta">
+            <img
+              src="assets\contact-icons\github-blue.svg"
+              alt="Github profile"
+            />
+          </a>
+        </div>
+        <div class="contact__cell contact__cell--email">
+          <a href="mailto:adam.dcosta@googlemail.com">
+            <img src="assets\contact-icons\mail-icon.svg" alt="gmail address" />
+          </a>
+        </div>
+        <div class="contact__cell contact__cell--cv">
+          <a
+            class="cta-button"
+            href="https://github.com/AdamDCosta/My-portfolio/blob/main/assets/CV/Adam%20D'Costa%20CV%202021%20new.pdf"
+            >View My CV</a
+          >
+        </div>
+        <div class="contact__cell contact__cell--email-address">
+          <p>adam.dcosta@googlemail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js" defer></script>
   </body>
 </html>
