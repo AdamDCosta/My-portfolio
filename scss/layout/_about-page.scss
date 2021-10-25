@@ -17,9 +17,7 @@
     background-image: url(../../assets/Forest-background-cropped.jpg);
     background-size: cover;
     width: 100%;
-    // background: none;
-    // background: rgb(0,18,25);
-    // background: linear-gradient(135deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 100%);
+    background-color: $color-blue-dark;
     height: 100vh;
     display: flex;
     align-items: center;
