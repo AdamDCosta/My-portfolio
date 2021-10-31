@@ -20,7 +20,7 @@ h3 {
 }
 
 header {
-  background-image: url("../../assets/Forest-background-cropped.jpg");
+  background-image: url("https://github.com/AdamDCosta/My-portfolio/blob/main/assets/Forest-background-cropped.jpg");
   background-color: #005F73;
   background-size: cover;
   width: 100%;
@@ -517,6 +517,7 @@ section .section-header {
     background-image: url(../../assets/Forest-background-cropped.jpg);
     background-size: cover;
     width: 100%;
+    background-color: #005F73;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -707,18 +708,25 @@ section .section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
   background: #001219;
   background: #005f73;
   background: linear-gradient(0deg, #005f73 15%, #fe8163 100%);
 }
 
+@media screen and (min-width: 768px) {
+  .skills-section {
+    padding-top: 10px;
+    height: 70vh;
+  }
+}
 @media screen and (min-width: 1024px) {
   .skills-section {
-    height: 60vh;
+    height: 70vh;
     background: #005f73;
     background: linear-gradient(0deg, #005f73 15%, #fe8163 100%);
+    padding-bottom: 20px;
   }
 }
 .skills {
@@ -740,7 +748,7 @@ section .section-header {
 .skills__cell--css, .skills__cell--react, .skills__cell--git {
   grid-column: 1/2;
 }
-.skills__cell--js, .skills__cell--node, .skills__cell--github {
+.skills__cell--js, .skills__cell--postman, .skills__cell--github {
   grid-column: 3/4;
 }
 .skills__cell img:hover {

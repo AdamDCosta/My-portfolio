@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     transition: transform .2s;
+
   }
 
   &__cell--html, &__cell--figma, &__cell--scss, &__cell--java {
@@ -23,7 +24,7 @@
     grid-column: 1 / 2;
   }
 
-  &__cell--js, &__cell--node, &__cell--github {
+  &__cell--js, &__cell--postman, &__cell--github {
     grid-column: 3 / 4;
   }
 
@@ -75,10 +76,11 @@
 @media screen and (min-width: $breakpoint-desktop) {
 
   .skills-section {
+    
 
     .skills {
       height: 30vh;
-  
+      
     }
   }
 
