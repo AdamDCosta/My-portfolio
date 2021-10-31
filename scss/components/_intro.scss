@@ -20,7 +20,7 @@
 
   &__cell--name {
     font-size: 2rem;
-    // text-align: center;
+    
   }
 
   &__cell--title {
@@ -30,7 +30,7 @@
 
   &__cell--profile {
     line-height: 1.5;
-    // text-align: center;
+    
   }
 
   &__cell--button {
@@ -42,7 +42,7 @@
 @media screen and (min-width: $breakpoint-tablet) {
 
   .intro {
-    gap: 50px;
+    gap: 30px;
     
 
     &__cell--name {
@@ -82,11 +82,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 30px;
     height: 70vh;
     width: 80%;
     padding: 10px;
-    margin: auto;
+    margin: 20px auto auto auto;
   
     &__cell {
       display: flex;
