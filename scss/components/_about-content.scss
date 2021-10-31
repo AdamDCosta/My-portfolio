@@ -68,7 +68,7 @@
       height: auto;
       max-height: 100%;
       width: 100%;
-      max-width: 400px;
+      max-width: 350px;
     }
 
     &__cell--intro, &__cell--desc {
@@ -96,11 +96,12 @@
     }
 
     &__cell--intro p {
-      font-size: 2rem;
+      font-size: 1.4rem;
+      padding-bottom: 10px;
     }
 
     &__cell--desc p {
-      line-height: 1.5;
+      line-height: 1.1;
     }
 
     &__cell--contact {
@@ -151,9 +152,16 @@
 
   .about {
 
+    &__cell--intro {
+      p {
+        font-size: 2rem;
+      }
+    }
+
     &__cell--desc {
       p {
         font-size: 1.2rem;
+        line-height: 1.5;
       }
     }
 
